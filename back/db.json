@@ -1,0 +1,20 @@
+{
+	"users": {
+		"beans": {
+			"pass": "$2b$10$UoQw7MlcdtcBArbVjkM72OWDLH1BB.YAGc3Kkr4eCxJntKH.B1yl.",
+			"balance": 2.7716172,
+			"staked": false,
+			"ip": "::ffff:69.165.244.178",
+			"memo": "87e250c6bb52620f3b91013f15aa",
+			"deposits": 2,
+			"withdrawals": 0
+		}
+	},
+	"memos": {
+		"87e250c6bb52620f3b91013f15aa": "beans"
+	},
+	"crash": {
+		"stakes": {}
+	},
+	"cursor": "178810135756472321"
+}
