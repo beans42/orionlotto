@@ -8,4 +8,4 @@ Full-stack casino app built with Solid.js, Express.js, and Socket.IO. Features d
 Demo available [here](https://orion.ebra.dev/)! An account (no email needed), and some USDC in a stellar wallet is needed to play (you can fork and remove this).
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/beans42/orionlotto/main/demo.png" alt="main page" height="300px"> <img src="https://raw.githubusercontent.com/beans42/orionlotto/main/demo1.png" alt="between rounds" height="300px"> <img src="https://raw.githubusercontent.com/beans42/orionlotto/main/demo2.png" alt="while betting" height="300px">
+<img src="https://raw.githubusercontent.com/beans42/orionlotto/main/demo.png" alt="main page" height="300px"> <img src="https://raw.githubusercontent.com/beans42/orionlotto/main/demo1.png" alt="while betting" height="300px"> <img src="https://raw.githubusercontent.com/beans42/orionlotto/main/demo2.png" alt="between rounds" height="300px">
