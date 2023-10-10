@@ -2,7 +2,6 @@ node_modules
 package-lock.json
 ssl
 .solid
-.env
 push.bat
 push.sh
 dist
