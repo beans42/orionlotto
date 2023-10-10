@@ -28,7 +28,7 @@ export default () => {
 		});
 	});
 	onCleanup(() => {
-		socket().off('crash update');
+		socket()?.off?.('crash update');
 	});
 
 	const placeBet = e => {

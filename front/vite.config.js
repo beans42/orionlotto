@@ -12,6 +12,7 @@ export default defineConfig({
 	},
 	plugins: [
 		solid({
+			adapter: 'solid-start-static',
 			ssr: true
 		})
 	],
