@@ -1,0 +1,5 @@
+node_modules
+ssl
+.env
+bun.lock
+package-lock.json
