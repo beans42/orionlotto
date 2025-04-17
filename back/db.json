@@ -1,0 +1,262 @@
+{
+	"users": {
+		"beans": {
+			"pass": "$2b$10$UoQw7MlcdtcBArbVjkM72OWDLH1BB.YAGc3Kkr4eCxJntKH.B1yl.",
+			"balance": 155.6227533,
+			"staked": false,
+			"ip": "::ffff:192.0.175.220",
+			"memo": "87e250c6bb52620f3b91013f15aa",
+			"deposits": 2,
+			"withdrawals": 2
+		},
+		"aaaaaaa2232": {
+			"pass": "$2b$10$lyO16nbzgSqQzXKKYL3FpOcd252wP/vptSAy67wMiqg.Q7mFwZvwO",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:60.240.239.214",
+			"memo": "b30c236b467d85d9cd7902c4961d",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"aaaaaaa22322321": {
+			"pass": "$2b$10$dB.MtX9tT6bOcxUUEwZTHu9EewVSYUE6VZB1fR97C0vxo0FCY8zo6",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:60.240.239.214",
+			"memo": "842109ce334a7ecb2f34262f4e23",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"austin1822": {
+			"pass": "$2b$10$V4YWcc9LdH660KbLKrFX/.9fOP3sm7Oh7zV/gQw0/lI0OtcRT2Jty",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:60.240.239.214",
+			"memo": "7641bb5cde7014766fccded39140",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"Juli1905": {
+			"pass": "$2b$10$Ohze57XXvhBaAHmi6vYDxe4pMqYtzpaPCYzFU8W2SSmosfrdeqh72",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:145.224.98.28",
+			"memo": "7deb6b19e09ae5cb1b814e65c92a",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"Juli19051": {
+			"pass": "$2b$10$4EnsJb4zmWiD2QzMHp1F3.fiulFlELTKKKMtDMaKSN9PWyDqKa2sa",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:145.224.98.28",
+			"memo": "b0594987e40f9bc71cd428956d52",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"Juli190513": {
+			"pass": "$2b$10$OMMPC8lz7FOIkDNpfsoLlupigrzatAZAnw3ZXKMjyqCmZJU9lAIAa",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:145.224.98.28",
+			"memo": "2d68f4b4edbba536ab5109e7f504",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"Gaymtf778": {
+			"pass": "$2b$10$8MMnA4jSeXI3erQuMPXvU.vp.y7dHVwAjKbsic.TctRJVoX1znJ/m",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:145.224.98.28",
+			"memo": "9ed3bfda1eef128f391bea921b51",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"Bob_TheGambler": {
+			"pass": "$2b$10$SiCgk388sm1OBkzO3RD0euRmnPfDE811S.0TPpzd2txWabP9JC3nS",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:188.26.221.155",
+			"memo": "a123980baa75ab66d84663be5b74",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"Tturpin": {
+			"pass": "$2b$10$ZXnWNqnJxUUcwOagYXYw6eJTlQZzr4NA5Vg8Uy04V.E4X/qLyi33S",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:104.28.116.102",
+			"memo": "7c267a5aeb8959ec3f23864ccf0e",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"xx": {
+			"pass": "$2b$10$Fzn9x3gjleudIVkN4WwsJua3kMlppSNRfkF1WavL4DuANfWpbau8m",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:107.179.238.236",
+			"memo": "43bae13d51b98b415e03d436c5f1",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"Blahpr": {
+			"pass": "$2b$10$SLLergSbvYWptazrj8MihuSJn7xk/tXHCG.1i.RMv2WcW2Y0RkAUS",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:73.2.0.130",
+			"memo": "c710e4437bbb7f24eab0a33dd1b4",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"roberto2212": {
+			"pass": "$2b$10$Ew6nwoa4dpcPgX2p14UsbOpwODjXDI7CEhXknbr8ntCPopB.QQnGq",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:191.253.127.186",
+			"memo": "a45e2a0fc114d89057b4dc341972",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"tester2023": {
+			"pass": "$2b$10$XezDdEwmcyRblHhRJewaCOMOkYhAJw5V.p8F5TQtaGKAEya3/Qlaq",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:177.115.47.35",
+			"memo": "c878596f326c064aee5c6b752957",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"qwdqwd": {
+			"pass": "$2b$10$OqbCOC7s1cR2MbsFjWT06uhJCNVwPLBwAsiQvdUoFqSsME7eU0frq",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:37.155.131.46",
+			"memo": "707aedfb9124d74e155abc8bc116",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"austin316": {
+			"pass": "$2b$10$k1gsOyWbU9N8lzWkKgZVu.Oeuu1lJPgKf4hkvbk/VycNesEW6d2YK",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:2.111.90.17",
+			"memo": "392107f6f511f85abe3e1736e1f7",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"vexed23": {
+			"pass": "$2b$10$MZY9kr.smTqYXtI/7YgPrOiCsWaDT2fODgQbh2UH1hQrLmfjOHhgm",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:139.57.223.126",
+			"memo": "5332d109ef77025a80bd8375695e",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"test": {
+			"pass": "$2b$10$1Urd51jF/HhyqD.9MU3JrOLsjYPfF67tKsaRJmO4YeQ0RQWRPui.S",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:24.212.192.180",
+			"memo": "b04545acb0da1d5beee3dc3c8dfb",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"user123": {
+			"pass": "$2b$10$2I8Q3arasMOXI62iE5lNuuttMvXUd6x1yeIV3nIYVNgFeYwcAFmiS",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:146.70.134.62",
+			"memo": "76ef276d3c1b7c8b6b0722110b8c",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"adinross": {
+			"pass": "$2b$10$wWuHbOqIBER7aADWrGJmr.11f6wuJe1Enu/O4LVJET/U1P6/oFIY6",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:172.56.11.8",
+			"memo": "05836c38b3edb566a72f75a81a77",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"aaaaa": {
+			"pass": "$2b$10$z464LJVYsAsmJy/o8ZsFZe7WXPIGipHJrK4S4OtVsx5/VYoSABGvK",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:49.228.106.139",
+			"memo": "3e67bd30698056f0081dab374a68",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"treythehot": {
+			"pass": "$2b$10$ERmOYdyKvZRlfdx499AEqOeV0uED44pY1BAkQlmyy0o74XU1X1zx6",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:107.115.152.17",
+			"memo": "1a151adabbcfc74aa9c927919624",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"legion": {
+			"pass": "$2b$10$IhGAA2I6jJJ.gJffZVmUw.6/EUOZcLmDwLZfWzuVmdmeqF5Pi3uIW",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:202.46.68.163",
+			"memo": "f90be40a4c3a2c509d60a0298a2b",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"agosto": {
+			"pass": "$2b$10$vwoGXPT15tCGOzOy58b0IOqZ5JWAXgF55jtvPdbJf0FmYO55ubdES",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:31.43.142.35",
+			"memo": "7c509b74ccae1c5ec625afc2b297",
+			"deposits": 0,
+			"withdrawals": 0
+		},
+		"noah": {
+			"pass": "$2b$10$thZkK4GIhNZeKSjjT29a..U8jyoz8Am2Z1GL4Sh6QI0v8NI6HbVAy",
+			"balance": 0,
+			"staked": false,
+			"ip": "::ffff:104.138.226.172",
+			"memo": "b561e4145b5ca8f0074a1bf9455a",
+			"deposits": 0,
+			"withdrawals": 0
+		}
+	},
+	"memos": {
+		"87e250c6bb52620f3b91013f15aa": "beans",
+		"461b9e5788d4ed6fb26edac8799d": "aaaaaaa2232",
+		"b30c236b467d85d9cd7902c4961d": "aaaaaaa2232",
+		"842109ce334a7ecb2f34262f4e23": "aaaaaaa22322321",
+		"7641bb5cde7014766fccded39140": "austin1822",
+		"7deb6b19e09ae5cb1b814e65c92a": "Juli1905",
+		"b0594987e40f9bc71cd428956d52": "Juli19051",
+		"2d68f4b4edbba536ab5109e7f504": "Juli190513",
+		"9ed3bfda1eef128f391bea921b51": "Gaymtf778",
+		"a123980baa75ab66d84663be5b74": "Bob_TheGambler",
+		"7c267a5aeb8959ec3f23864ccf0e": "Tturpin",
+		"43bae13d51b98b415e03d436c5f1": "xx",
+		"c710e4437bbb7f24eab0a33dd1b4": "Blahpr",
+		"a45e2a0fc114d89057b4dc341972": "roberto2212",
+		"c878596f326c064aee5c6b752957": "tester2023",
+		"7d2c83ea89f957a03f3d9087a2f4": "qwdqwd",
+		"707aedfb9124d74e155abc8bc116": "qwdqwd",
+		"392107f6f511f85abe3e1736e1f7": "austin316",
+		"5332d109ef77025a80bd8375695e": "vexed23",
+		"b04545acb0da1d5beee3dc3c8dfb": "test",
+		"76ef276d3c1b7c8b6b0722110b8c": "user123",
+		"05836c38b3edb566a72f75a81a77": "adinross",
+		"3e67bd30698056f0081dab374a68": "aaaaa",
+		"1a151adabbcfc74aa9c927919624": "treythehot",
+		"f90be40a4c3a2c509d60a0298a2b": "legion",
+		"7c509b74ccae1c5ec625afc2b297": "agosto",
+		"b561e4145b5ca8f0074a1bf9455a": "noah"
+	},
+	"crash": {
+		"stakes": {}
+	},
+	"cursor": "240653361262100520"
+}
