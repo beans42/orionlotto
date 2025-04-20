@@ -5,7 +5,7 @@ import { Title } from '@solidjs/meta';
 import { Button, VStack } from '@hope-ui/core';
 import toast from 'solid-toast';
 
-import Input from '../components/Input';
+import Input from '~/components/Input';
 
 export default () => {
 	const navigate = useNavigate();
@@ -14,12 +14,11 @@ export default () => {
 
 	const handler = async (e, isRegister) => {
 		e.preventDefault();
-		const response = await axios.post(`${import.meta.env.VITE_API}/api/${isRegister ? 'register' : 'login'}`, {
+		const response = await axios.post('/api/' + (isRegister ? 'register' : 'login'), {
 			user: user(),
 			pass: pass()
 		});
 		if (response.status === 200) {
-			document.cookie = `token=${response.data}`;
 			navigate(`${import.meta.env.BASE_URL}app`, { replace: true });
 		} else
 			toast.error(response.data.error);

@@ -1,5 +1,6 @@
 import { Title } from 'solid-start';
-import Link from '../utils/Link';
+
+import Link from '~/utils/Link';
 
 export default () => {
 	return (

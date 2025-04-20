@@ -8,7 +8,7 @@ export const initialize = async () => {
 	let measures = [];
 	for (let i = 0; i < runs; ++i) {
 		const t0 = Date.now();
-		const res = await axios.get(`${import.meta.env.VITE_API}/now`);
+		const res = await axios.get('/now');
 		const t3 = Date.now();
 		if (res.status === 200) {
 			const ts = res.data;

@@ -3,7 +3,8 @@ import { createSignal } from 'solid-js';
 import { Heading, Button } from '@hope-ui/core';
 import axios from 'axios';
 import toast from 'solid-toast';
-import Input from '../../components/Input';
+
+import Input from '~/components/Input';
 
 export default () => {
 	const [destination, setDestination] = createSignal('');
@@ -13,14 +14,14 @@ export default () => {
 	const submit = async e => {
 		e?.preventDefault();
 		setLoading(true);
-		const res = await axios.post(`${import.meta.env.VITE_API}/api/withdraw`, {
+		const res = await axios.post('/api/withdraw', {
 			amount: amount().toString(),
 			destination: destination()
 		});
 		if (res.status === 200)
-            toast.success(`You withdrew $${res.data.amount}.`);
+			toast.success(`You withdrew $${res.data.amount}.`);
 		else
-            toast.error(res.data.error);
+			toast.error(res.data.error);
 		setLoading(false);
 	};
 
@@ -45,9 +46,9 @@ export default () => {
 							Amount:
 							<Input
 								class='w-full'
-                                type='number'
-                                step='any'
-                                label='$'
+								type='number'
+								step='any'
+								label='$'
 								value={amount()}
 								onInput={e => setAmount(+e.target.value)}
 							/>
@@ -55,7 +56,7 @@ export default () => {
 						<Button
 							type='submit'
 							isFullWidth
-                            variant='solid'
+							variant='solid'
 							colorScheme='success'
 							isLoading={loading()}
 						>

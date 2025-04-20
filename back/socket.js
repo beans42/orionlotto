@@ -13,6 +13,7 @@ global.filteredState = user => {
 	delete copy.ip;
 	delete copy.deposits;
 	delete copy.withdrawals;
+	copy.user = user;
 	return copy;
 };
 
@@ -28,10 +29,10 @@ let nextGame;
 let t1;
 
 io.on('connection', socket => {
-	const { auth } = socket.handshake;
-	if (!isValidJWT(auth.token))
+	const authToken = socket.handshake.headers.cookie.slice(6);
+	if (!isValidJWT(authToken))
 		return socket.disconnect(true);
-	const { user } = parseJWT(auth.token);
+	const { user } = parseJWT(authToken);
 	socket.join(user);
 	socket.on('crash join', () => {
 		socket.join('crash');

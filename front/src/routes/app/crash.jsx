@@ -1,12 +1,13 @@
 import { Title } from '@solidjs/meta';
-import { user } from '../../utils/state';
-import { socket } from '../../utils/socket';
 import { onMount, onCleanup, createSignal, Show } from 'solid-js';
 import { Button, HStack, VStack, Modal } from '@hope-ui/core';
-import { offset } from '../../utils/ts';
-import Input from '../../components/Input';
-import Badge from '../../components/Badge';
 import toast from 'solid-toast';
+
+import { user } from '~/utils/state';
+import { socket } from '~/utils/socket';
+import { offset } from '~/utils/ts';
+import Input from '~/components/Input';
+import Badge from '~/components/Badge';
 
 const time = () => Date.now() + offset();
 const calculateRate = msPassed => Math.pow(1.0618317554, msPassed / 1000);
@@ -19,13 +20,19 @@ export default () => {
 	const [now, setNow] = createSignal(time());
 	const [isOpen, setIsOpen] = createSignal(false);
 	onMount(() => {
-		socket().emit('crash join');
-		socket().on('crash state', x => setCrash({ ...crash(), ...x }));
-		socket().on('crash boom', () => {
-			if (crash().yourStake)
-				toast.error(`You lost $${crash().yourStake.amount}.`);
-			setCrash({ ...crash(), yourStake: null });
-		});
+		let intervalRef;
+		intervalRef = setInterval(() => {
+			if (socket() === null)
+				return;
+			clearInterval(intervalRef);
+			socket().emit('crash join');
+			socket().on('crash state', x => setCrash({ ...crash(), ...x }));
+			socket().on('crash boom', () => {
+				if (crash().yourStake)
+					toast.error(`You lost $${crash().yourStake.amount}.`);
+				setCrash({ ...crash(), yourStake: null });
+			});
+		}, 100);
 	});
 	onCleanup(() => {
 		socket()?.off?.('crash update');

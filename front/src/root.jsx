@@ -12,25 +12,18 @@ import {
 	Scripts,
 	Title
 } from 'solid-start';
-import 'tailwindcss/tailwind.css';
-import './preflight.css';
 import { ColorModeScript, HopeProvider, injectCriticalStyle } from '@hope-ui/core';
 import { Toaster } from 'solid-toast';
+
+import 'tailwindcss/tailwind.css';
+import './preflight.css';
 
 import Header from './components/Header';
 
 import axios from 'axios';
+axios.defaults.baseURL = import.meta.env.VITE_API;
 axios.defaults.validateStatus = () => true;
 axios.defaults.withCredentials = true;
-
-const code = `
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JSPQPCY3JF');
-</script>`
 
 export default () => {
 	injectCriticalStyle();
