@@ -58,7 +58,12 @@ router.post('/register', async (req, res) => {
 	};
 	db.memos[memo] = user;
 	const token = jwt.sign({ user }, process.env.TOKEN_SECRET, { expiresIn: '1d' });
-	res.cookie('token', token);
+	res.cookie('token', token, {
+		httpOnly: true,
+		secure: true,
+		maxAge: 1 * 24 * 3600 * 1000,
+		sameSite: 'lax',
+	});
 	return res.status(200).json(token);
 });
 
