@@ -1,9 +1,9 @@
 import { Title } from '@solidjs/meta';
-import Link from '../../utils/Link';
 import { Box } from '@hope-ui/core';
-import { user } from '../../utils/state';
 
-import crashPic from '../../assets/crash.jpg';
+import Link from '~/utils/Link';
+import { user } from '~/utils/state';
+import crashPic from '~/assets/crash.jpg';
 
 const Game = props => {
 	return (

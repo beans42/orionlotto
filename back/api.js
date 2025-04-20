@@ -73,8 +73,25 @@ router.post('/login', async (req, res) => {
 		return res.status(500).json({ error: 'Wrong password.' });
 	const token = jwt.sign({ user }, process.env.TOKEN_SECRET, { expiresIn: '1d' });
 	db.users[user].ip = req.socket.remoteAddress;
-	res.cookie('token', token);
-	return res.status(200).json(token);
+	res.cookie('token', token, {
+		httpOnly: true,
+		secure: true,
+		maxAge: 1 * 24 * 3600 * 1000,
+		sameSite: 'lax',
+	});
+	return res.sendStatus(200);
+});
+
+router.post('/logout', async (req, res) => {
+	const tokenCookie = req.cookies['token'];
+	if (!tokenCookie)
+		return res.status(500).json({ error: 'No auth cookie.' });
+	res.clearCookie('token', {
+		httpOnly: true,
+		secure: true,
+		sameSite: 'lax',
+	});
+	return res.sendStatus(200);
 });
 
 router.get('/getUser', async (req, res) => {

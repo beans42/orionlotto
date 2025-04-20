@@ -1,6 +1,7 @@
 import { Title } from '@solidjs/meta';
-import { user } from '../../utils/state';
 import { Heading, Anchor, Button, HStack } from '@hope-ui/core';
+
+import { user } from '~/utils/state';
 
 function fallbackCopyTextToClipboard(text) {
 	const textArea = document.createElement('textarea');
@@ -26,7 +27,7 @@ function copyTextToClipboard(text) {
 }
 
 export default () => {
-    const style = 'text-[#0894b3] dark:text-[#00b1cc]';
+	const style = 'text-[#0894b3] dark:text-[#00b1cc]';
 	return (
 		<>
 			<Title>Deposit</Title>

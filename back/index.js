@@ -44,10 +44,10 @@ app.use('/api', expressjwt({
 	secret: process.env.TOKEN_SECRET,
 	algorithms: [ 'HS256' ],
 	getToken: req => req.cookies['token']
-}).unless({ path: [ '/api/register', '/api/login' ] }));
+}).unless({ path: [ '/api/register', '/api/login', '/api/logout' ] }));
 app.use((err, req, res, next) => { //disable UnauthorizedError log from express-jwt
 	if (err.name === 'UnauthorizedError')
-		return;
+		res.status(401).json({ error: 'Unauthorized' });
 	else
 		next(err);
 });
