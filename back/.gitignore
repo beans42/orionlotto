@@ -3,3 +3,4 @@ ssl
 .env
 bun.lock
 package-lock.json
+db.json
