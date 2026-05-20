@@ -8,8 +8,8 @@ export default defineConfig({
 		port: 3390,
 		strictPort: true,
 		https: {
-			cert: readFileSync('ssl/fullchain.pem'),
-			key: readFileSync('ssl/privkey.pem'),
+			cert: readFileSync('/home/ebrahim/ssl/fullchain.pem'),
+			key: readFileSync('/home/ebrahim/ssl/privkey.pem'),
 		},
 		proxy: {},
 		hmr: {

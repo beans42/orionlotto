@@ -1,6 +1,6 @@
 process.stdout.write('\x1Bc')
 const express = require('express');
-const https = require('https');
+const http = require('http');
 const { Server } = require('socket.io');
 const { expressjwt } = require('express-jwt');
 const cookieParser = require('cookie-parser');
@@ -15,13 +15,8 @@ global.$depositCanExit = trkl(true);
 global.$withdrawCanExit = trkl(true);
 global.$canExit = trkl.computed(() => $depositCanExit() && $withdrawCanExit());
 
-const ssl_options = {
-	key: readFileSync('ssl/privkey.pem'),
-	cert: readFileSync('ssl/fullchain.pem'),
-};
-
 const app = express();
-const server = https.createServer(ssl_options, app);
+const server = http.createServer(app);
 global.io = new Server(server, {
 	cors: {
 		origin: process.env.CLIENT_HOST,
