@@ -1,6 +1,5 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
 const crypto = require('crypto');
 const StellarSdk = require('stellar-sdk');
 
@@ -41,8 +40,10 @@ router.post('/register', async (req, res) => {
 		return res.status(500).json({ error: 'Username is too long.' });
 	if (!pass)
 		return res.status(500).json({ error: 'Can\'t have empty password.' });
-	const salt = await bcrypt.genSalt(10);
-	const hashed = await bcrypt.hash(pass, salt);
+	const hashed = await Bun.password.hash(pass, {
+		algorithm: 'bcrypt',
+		cost: 10,
+	});
 	let memo;
 	do {
 		memo = crypto.randomBytes(14).toString('hex');
@@ -73,7 +74,7 @@ router.post('/login', async (req, res) => {
 		return res.status(500).json({ error: 'Invalid username.' });
 	if (!pass)
 		return res.status(500).json({ error: 'Can\'t have empty password.' });
-	const valid = await bcrypt.compare(pass, db.users[user].pass);
+	const valid = await Bun.password.verify(pass, db.users[user].pass);
 	if (!valid)
 		return res.status(500).json({ error: 'Wrong password.' });
 	const token = jwt.sign({ user }, process.env.TOKEN_SECRET, { expiresIn: '1d' });

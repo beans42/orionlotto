@@ -1,7 +1,11 @@
 {
+	"scripts": {
+		"dev": "bun --watch index.js",
+		"build": "rm -rf dist && bun build index.js --minify --target bun --packages external --outdir dist && cp package.json .env db.json dist && cd dist && bun install --frozen-lockfile",
+		"start": "NODE_ENV=production bun dist/index.js"
+	},
 	"dependencies": {
 		"axios": "^0.27.2",
-		"bcrypt": "^5.0.1",
 		"cookie-parser": "^1.4.6",
 		"cors": "^2.8.5",
 		"express": "^5.1.0",
